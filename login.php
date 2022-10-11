@@ -4,7 +4,7 @@
 <div class="uk-height-viewport uk-flex uk-flex-middle">
     <div class="uk-width-1-1 uk-section">
         <div class="uk-container">
-            <div class="uk-child-width-auto uk-flex-center" uk-grid>
+            <div class="uk-child-width-auto@s uk-flex-center" uk-grid>
                 <div>
                     <div class="login__box uk-position-relative">
                         <div class="login__card uk-border-rounded uk-card uk-card-default uk-card-body">

@@ -1000,11 +1000,16 @@ body {
   z-index: -1;
 }
 .login__card {
-  width: 400px;
   box-shadow: 0 4px 24px 0 rgba(34, 41, 47, 0.1);
   transition: all 0.3s ease-in-out, background 0s, color 0s, border-color 0s;
   position: relative;
   padding: 21px;
+  width: 100%;
+}
+@media (min-width: 640px) {
+  .login__card {
+    width: 400px;
+  }
 }
 .login__label {
   color: #5e5873;
