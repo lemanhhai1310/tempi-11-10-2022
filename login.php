@@ -11,7 +11,7 @@
                             <figure class="login__logo">
                                 <a href=""><img src="images/logo.579a35ac.png" alt=""></a>
                             </figure>
-                            <form class="uk-form-stacked">
+                            <form class="uk-form-stacked login__form">
                                 <fieldset class="uk-fieldset">
 
                                     <legend class="uk-legend uk-text-center login__legend">Đăng nhập</legend>
