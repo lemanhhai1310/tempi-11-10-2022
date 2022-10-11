@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="REFRESH" content="1800"/>
+    <title>Login</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+    <!--CSS-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.15.10/dist/css/uikit.min.css" />
+    <link rel="stylesheet" href="style.css?v=1665458694">
+
+    <!--JS-->
+    <script src="https://cdn.jsdelivr.net/npm/@shinsenter/defer.js/dist/defer_plus.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.15.10/dist/js/uikit.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.15.10/dist/js/uikit-icons.min.js"></script>
+    <script src="js/app.js?v=1665458694"></script>
+</head>
+<body class="">
+<!-- Load Facebook SDK for JavaScript -->
+<div id="fb-root"></div>
+<!-- Your customer chat code -->
+<div class="fb-customerchat"
+     attribution=setup_tool
+     page_id="2428809380682169"
+     logged_in_greeting="Bạn cần cắt HTML/CSS? Hãy chat ngay với chúng tôi"
+     logged_out_greeting="Bạn cần cắt HTML/CSS? Hãy chat ngay với chúng tôi">
+</div>
+<script>
+    defer(function() {
+        window.fbAsyncInit = function() {
+            FB.init({
+                xfbml            : true,
+                version          : 'v5.0'
+            });
+        };
+
+        (function(d, s, id) {
+            var js, fjs = d.getElementsByTagName(s)[0];
+            if (d.getElementById(id)) return;
+            js = d.createElement(s); js.id = id;
+            js.src = 'https://connect.facebook.net/vi_VN/sdk/xfbml.customerchat.js';
+            fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));
+    }, 5000);
+</script><!--app-->
+<div id="app" class="uk-height-viewport uk-offcanvas-content uk-overflow-hidden uk-position-relative"><div class="uk-height-viewport uk-flex uk-flex-middle">
+    <div class="uk-width-1-1 uk-section">
+        <div class="uk-container">
+            <div class="uk-child-width-auto uk-flex-center" uk-grid>
+                <div>
+                    <div class="login__box uk-position-relative">
+                        <div class="login__card uk-border-rounded uk-card uk-card-default uk-card-body">
+                            <figure class="login__logo">
+                                <a href=""><img src="images/logo.579a35ac.png" alt=""></a>
+                            </figure>
+                            <form class="uk-form-stacked">
+                                <fieldset class="uk-fieldset">
+
+                                    <legend class="uk-legend uk-text-center login__legend">Đăng nhập</legend>
+
+                                    <div class="uk-margin">
+                                        <label class="uk-form-label login__label" for="form-stacked-text">Số điện thoại</label>
+                                        <div class="uk-form-controls">
+                                            <input class="uk-input login__input" id="form-stacked-text" type="tel" placeholder="Nhập số điện thoại">
+                                        </div>
+                                    </div>
+
+                                    <div class="uk-margin">
+                                        <div class="uk-position-relative">
+                                            <a href="" class="uk-position-top-right login__forgot">Quên mật khẩu?</a>
+                                            <label class="uk-form-label login__label" for="form-stacked-text">Mật khẩu</label>
+                                            <div class="uk-form-controls">
+                                                <div class="uk-inline uk-width-1-1">
+                                                    <a class="uk-form-icon uk-form-icon-flip login__iconEye" href="#" uk-icon="icon: link"></a>
+                                                    <input class="uk-input login__input" type="password" placeholder="Nhập mật khẩu">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="uk-margin">
+                                        <button type="submit" class="login__btnSubmit uk-button uk-button-secondary uk-width-1-1">Đăng nhập</button>
+                                    </div>
+
+                                    <div class="uk-margin-top uk-text-center">
+                                        <div class="login__txt">Bạn chưa có tài khoản? <a href="">Đăng ký</a></div>
+                                    </div>
+                                </fieldset>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+<!--/app-->
+</body>
+</html>
